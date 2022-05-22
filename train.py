@@ -1,6 +1,6 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import ConfusionMatrixDisplay
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import json
 import os
 import numpy as np
@@ -23,6 +23,6 @@ with open("metrics.txt", "w") as outfile:
 
 # Plot it
 disp = ConfusionMatrixDisplay.from_estimator(
-    clf, X_test, y_test, normalize="true", cmap=plt.cm.Blues
+    clf, X_test, y_test, normalize="true"
 )
-plt.savefig("confusion_matrix.png")
+# plt.savefig("confusion_matrix.png")
